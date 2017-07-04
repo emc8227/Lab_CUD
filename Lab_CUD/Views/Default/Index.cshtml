@@ -1,0 +1,35 @@
+﻿@using Lab_CUD.Models
+@model List<student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p><a href="~/Default/Create">Create</a></p>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        
+    </tr>
+
+    @foreach (student row in Model) {
+        <tr>
+            <td>@row.ID</td>
+            <td>@row.name</td>
+            <td>@row.phone</td>
+          
+            <td>
+                <a href="~/Default/Detail/@row.ID">Detail</a>
+                <a href="~/Default/Update/@row.ID">Update</a>
+                <a href="~/Default/Delete/@row.ID">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+
+

@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Detail";
+}
+
+@model Lab_CUD.Models.student
+
+
+
+<h2>Detail</h2>
+
+<style>
+</style>
+
+<table class="table">
+    <tr>
+        <th>student ID</th>
+        <td class="col-md-10">@Model.ID</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>@Model.name</td>
+    </tr>
+    <tr>
+        <th>Phone</th>
+        <td>@Model.phone</td>
+    </tr>
+ 
+</table>
+<a href="~/Default/Index" class="btn btn-default">Back</a>

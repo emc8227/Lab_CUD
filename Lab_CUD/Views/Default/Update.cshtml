@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+}
+
+@model Lab_CUD.Models.student
+
+<h2>Update</h2>
+<hr/>
+<div class="form-horizontal">
+    <form method="post" action="" data-ajax="false">
+
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Student ID</label>
+            <div class="col-md-10">
+                <input class="form-control" type="text" id="id" name="ID" value="@Model.ID" />
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Name</label>
+            <div class="col-md-10">
+                <input class="form-control" type="text" id="name" name="name" value="@Model.name" />
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Phone</label>
+            <div class="col-md-10">
+                <input class="form-control" type="text" id="phone" name="phone" value="@Model.phone" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input class="btn btn-default" type="submit" value="Update" />　<a href="~/Default/Index" class="btn btn-default">Cancel</a>
+            </div>
+        </div>
+
+
+    </form>
+</div>
